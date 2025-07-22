@@ -49,8 +49,8 @@ header{
  }
  .navbar, .brand{
    max-width: 100%;
-   /* margin: 0 auto; */
  }
+ 
  /*baner style*/
  .baner-discription  {
     
@@ -113,6 +113,7 @@ header{
    margin: 0 auto;
  }
    /* section style */
+
    .one{
       margin-top: 85px;
    }
@@ -128,7 +129,7 @@ header{
 .commit{
     color: #727272;
     font-size: 1rem ;
-    
+
 }
  /* .Quick{ 
     color: #727272;
@@ -145,14 +146,14 @@ header{
     font-size: 45px;
     font-weight: bold
  }   */
- /* .our-feature{
-    max-width: 537px;
-    max-height: 304px;
- } */
+  
+  
   .features-heading {
   font-size: 3rem; /* You can adjust this */
   font-family: Arial, sans-serif;
   margin-bottom: 20px;
+  /* modifyed */
+
 }
 
 .quick {
@@ -178,16 +179,10 @@ header{
    display: flex;
 }
  .common-commit{
-   width: 36.75rem;
-   height: 171px;
-   /* background-color: aqua; */
    border-radius: 10px;
    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.25) ;
-   
  }
  .commit{
-   width: 514px;
-   height: 78px;
    padding: 0px 40px 30px 30px;
  }
  .headline{
@@ -201,12 +196,17 @@ header{
  }
  .common-H{
    color: #131313;
-   font-size: 45px;
+   font-size: 3rem;
    font-weight: bold; 
+   margin-top: 0;
  }
 .architect{
    width: 100%;
+   margin-left: 114px;
+   margin-top: 130px;
+  
 }
+
 
 .experience {
    border-radius: 10px;
@@ -216,9 +216,12 @@ header{
    display: flex;
    justify-content: center;
    align-items: center;
-   /* position: relatives; */
-   /* margin-left: -px;
-   margin-top: -50px; */
+   /* position: relative; */
+    top: -70px;
+   left: 50px;
+   position: absolute;
+  
+   
 }
 .year{
     font-size: 4rem;
@@ -231,36 +234,26 @@ header{
    
    display: flex;
 }
-/* .experience-container{
-   margin-top: 130px;
-   margin-left: 40px;
-      position: relatives;
-} */
-.architect{
-   padding-left: 92px;
-}
   /*section three style */
   .samarry-board{
-    
-   display: flex;
-   gap:100px ;
-   width: 1170px;
-   margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: 0 auto;
+
   }
   .three{
-   max-width: 1440px;
- 
-  }
+   align-items: center;
+   justify-content: center;
+  } 
+  
+  
   .sammery-card{
-   padding: 10px;
-   border: 1px solid #c91515;
+   padding: 30px;
+    border: 2px solid  rgba(255, 144, 14, 1);
    border-radius: 5px;
    text-align: center;
-  width: 240px;
-  height:160px ;
-  padding-top:50px;
-
-  
+   margin-left: 20px;
+   height: 175px;
   }
  .commit-number{
    font-size: 45px;
@@ -268,11 +261,6 @@ header{
    color: #424242;
    margin: 0px auto;
   
- 
-
-   height: 53px;
-   width: 55px;
-   
  }
  .commit-next{
       font-size: 20px;
@@ -296,41 +284,32 @@ header{
    margin-bottom: 0;
 }
 /* sponspors-container style */
+.sponspors-containar{
+   width: 33.80rem;
+   
+}
 .four{
    margin: 50px;
 }
 .heading{
-   font-size: 45px;
+   font-size: 3rem;
    font-weight: bold;
-   
+
 }
  .heading-commit{
-   padding-bottom: 0px;
-   margin-top: -24px;
    font-size: 1.15rem;
    font-weight: 200;
    color: #727272;
  }
-.sponspors-containar{
-    text-align: center;
-     margin: 0 auto;
- 
-   width: 542px;
-   
-}
  
 .sponpors-logo{
- display: flex;
- justify-content: space-between;
-   border: 2px solid rgb(11, 71, 36);
+ display: grid;
+ grid-template-columns: repeat(5,1fr);
    margin-top: 50px ;
-    color:#FFFFFF ;
-      background-color: #FFFFFF ;
 }
+
 .logo{
-   border: 2px solid beige;
-   width: 166px;
-   height: 50px;
+   filter:grayscale(100%) ;
     
 }
 /* footer style */
@@ -352,42 +331,45 @@ header{
 @media screen and (max-width: 576px) {
     
    .navbar,.nav-list,  .love-container , .samarry-board , .sponpors-logo {
-       flex-direction: column;
+      flex-direction: column;
+      /* max-width: 100%; */
+     
+      justify-items: center;
+   }
+   .sponpors-logo ,.samarry-board{
+      justify-items: center; 
    }
   .one{
        flex-direction: column;
      
    }
-   .commit-a {
-    padding-left: 130px;
+  
+   .sponpors-logo , .samarry-board{
+     grid-template-columns: repeat(1,1fr);
+     gap: 25px;
+     
    }
-.sponpors-logo{
-   gap: 50px;
-   justify-content: center;
-    
-   justify-content: center;
-}
-main{
-   width: 100%;
-   
-}
-.common-commit{
-   margin-left: -30px;
-}
-.features-heading{
-   margin-left: 75px;
-}
- .commit   { 
+    .features-heading{
+      padding: 0;
+      margin: 0;
+    }
+   .experience{
+      /* width: 100%;
+      height: 100%; */
+      margin: 0 auto;
+   }
+   .architect ,.experience {
+      position: static;
+      
+   }
+   .sponspors-containar ,.experience ,.architect   {
+      width: 100%;
+   }
+  .architect ,.our-feature ,.heading {
+   margin: 0 auto;
    padding: 0;
- }
- .secand-btn {
-   margin-left: 200px;
- }
- .sammery-card{
-   justify-items: center;
- }
-
-
+  }
+  
 }
 
 
