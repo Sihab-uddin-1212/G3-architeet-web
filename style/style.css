@@ -1,0 +1,397 @@
+ 
+ 
+ /* shared style*/
+   .display-flex{
+    display: flex;
+
+   }
+/*dark 01*/
+.text-gray{
+    color: #424242;
+}
+/*dark 02*/
+.text-light-gray{
+   color: #727272;
+}
+
+/*header style*/
+header{
+    background-color:   rgba(255, 144 , 14 ,0.1) ;
+}
+ /*.navbar .discription{
+    max-width: 1650px;
+    margin: 0 auto;
+}*/
+
+ .navbar{
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 25px;
+}
+ .nav-item{
+    list-style: none;
+    margin-right: 60px;
+    font-size: 18px;
+   
+    
+}
+.nav-list{
+   /* margin-right: 230px; ( finish touch)*/
+}
+.nav-link{
+    text-decoration: none;
+    font-weight: 500;
+     color: #424242;
+     
+}
+ .brand{
+    font-size: 2.8rem;
+ }
+ .navbar, .brand{
+   max-width: 100%;
+   /* margin: 0 auto; */
+ }
+ /*baner style*/
+ .baner-discription  {
+    
+    justify-items: center;
+   align-items: center;
+ 
+  
+}
+.baner-titel{
+    text-align: center;
+}
+ .baner-container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.baner-titel{
+    font-weight: 600;
+    font-size: 4rem;
+    color: #131313;
+    margin: 20px;
+}
+.deateils{
+    text-align: center;
+    color: #727272;
+    font-size: 16px;
+    margin-top: 0;
+    padding-top: 0;
+}
+ 
+ .btn a{
+    text-decoration: none;
+    color: #eeeeee;
+
+ }
+ #btn-link{
+   font-size: 20px;
+    
+ }
+ .btn{
+    border-radius: 10px ;
+     border: none;
+    font-weight: 500;
+    padding: 20px;
+    background-color:#FF900E ;
+      
+ }
+ #banner-img{
+   width: 100%;
+   margin-bottom:45px ;
+ }
+  .banner-btn{
+   display: flex;
+   justify-content: center;
+   margin-bottom: 50px;
+   margin-top: 32px;
+  }
+/* main style */
+ main{
+   max-width: 1440px;
+   margin: 0 auto;
+ }
+   /* section style */
+   .one{
+      margin-top: 85px;
+   }
+   .grid-img{
+    grid-template-columns: repeat(2,1fr);
+    gap: 50px;
+
+   }
+   .one{
+   align-items: center;
+   display: flex;
+}
+.commit{
+    color: #727272;
+    font-size: 1rem ;
+    
+}
+ /* .Quick{ 
+    color: #727272;
+    font-size: 45px;
+    font-weight: 500;
+}
+ .our{
+   color: #131313;
+    font-size: 55px;
+    font-weight: 500;
+}
+ .Feature{
+    color:  #FF900E;
+    font-size: 45px;
+    font-weight: bold
+ }   */
+ /* .our-feature{
+    max-width: 537px;
+    max-height: 304px;
+ } */
+  .features-heading {
+  font-size: 3rem; /* You can adjust this */
+  font-family: Arial, sans-serif;
+  margin-bottom: 20px;
+}
+
+.quick {
+  color: gray;
+  font-weight: normal;
+}
+
+.our {
+  color: black;
+  font-weight: bold;
+}
+
+.feature {
+  color: gold; /* or use #FFD700 */
+  font-weight: bold;
+}
+ .secand-btn{
+    color: #eeeeee;
+ }
+ /*section two style*/
+
+.love-container{
+   display: flex;
+}
+ .common-commit{
+   width: 36.75rem;
+   height: 171px;
+   /* background-color: aqua; */
+   border-radius: 10px;
+   box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.25) ;
+   
+ }
+ .commit{
+   width: 514px;
+   height: 78px;
+   padding: 0px 40px 30px 30px;
+ }
+ .headline{
+ color: #131313;
+ font-size: 1.25rem;
+ font-weight: 500;
+ padding: 30px 40px 0px 30px;
+ }
+ .commit-x{
+   padding: 0px;
+ }
+ .common-H{
+   color: #131313;
+   font-size: 45px;
+   font-weight: bold; 
+ }
+.architect{
+   width: 100%;
+}
+
+.experience {
+   border-radius: 10px;
+   background-color: #FF900E ;
+   width: 342px;
+   height: 200px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   /* position: relatives; */
+   /* margin-left: -px;
+   margin-top: -50px; */
+}
+.year{
+    font-size: 4rem;
+    font-weight: bold;
+   color: #eeeeee;
+}
+.exp{
+   font-weight: 500;
+   font-size: 1.5rem;
+   
+   display: flex;
+}
+/* .experience-container{
+   margin-top: 130px;
+   margin-left: 40px;
+      position: relatives;
+} */
+.architect{
+   padding-left: 92px;
+}
+  /*section three style */
+  .samarry-board{
+    
+   display: flex;
+   gap:100px ;
+   width: 1170px;
+   margin: 0 auto;
+  }
+  .three{
+   max-width: 1440px;
+ 
+  }
+  .sammery-card{
+   padding: 10px;
+   border: 1px solid #c91515;
+   border-radius: 5px;
+   text-align: center;
+  width: 240px;
+  height:160px ;
+  padding-top:50px;
+
+  
+  }
+ .commit-number{
+   font-size: 45px;
+   font-weight: 300;
+   color: #424242;
+   margin: 0px auto;
+  
+ 
+
+   height: 53px;
+   width: 55px;
+   
+ }
+ .commit-next{
+      font-size: 20px;
+   font-weight: 300;
+   color: #727272;
+   margin: 0px auto;
+  
+ 
+ }
+.icon{
+   margin: 0px auto;
+     display: flex;
+   justify-content: center;
+  
+}
+.fact{
+   font-size: 45px;
+   font-weight: bold;
+   color: #131313;
+   margin-left: 28px;
+   margin-bottom: 0;
+}
+/* sponspors-container style */
+.four{
+   margin: 50px;
+}
+.heading{
+   font-size: 45px;
+   font-weight: bold;
+   
+}
+ .heading-commit{
+   padding-bottom: 0px;
+   margin-top: -24px;
+   font-size: 1.15rem;
+   font-weight: 200;
+   color: #727272;
+ }
+.sponspors-containar{
+    text-align: center;
+     margin: 0 auto;
+ 
+   width: 542px;
+   
+}
+ 
+.sponpors-logo{
+ display: flex;
+ justify-content: space-between;
+   border: 2px solid rgb(11, 71, 36);
+   margin-top: 50px ;
+    color:#FFFFFF ;
+      background-color: #FFFFFF ;
+}
+.logo{
+   border: 2px solid beige;
+   width: 166px;
+   height: 50px;
+    
+}
+/* footer style */
+.last{
+   background-color: #FFF4E7;
+}
+
+.footer{
+   display: flex;
+   justify-content: center;
+   margin-bottom: 216px;
+}
+
+.footer-commit{
+   font-size:20px ;
+   color: #424242;
+}
+/* small device queary */
+@media screen and (max-width: 576px) {
+    
+   .navbar,.nav-list,  .love-container , .samarry-board , .sponpors-logo {
+       flex-direction: column;
+   }
+  .one{
+       flex-direction: column;
+     
+   }
+   .commit-a {
+    padding-left: 130px;
+   }
+.sponpors-logo{
+   gap: 50px;
+   justify-content: center;
+    
+   justify-content: center;
+}
+main{
+   width: 100%;
+   
+}
+.common-commit{
+   margin-left: -30px;
+}
+.features-heading{
+   margin-left: 75px;
+}
+ .commit   { 
+   padding: 0;
+ }
+ .secand-btn {
+   margin-left: 200px;
+ }
+ .sammery-card{
+   justify-items: center;
+ }
+
+
+}
+
+
+
+
+
+
